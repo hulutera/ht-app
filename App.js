@@ -26,7 +26,8 @@ const App = () => {
       </View>
       <View style={styles.language_view_cmpt}>
       <TouchableOpacity style={styles.button} onPress={() => Linking.openURL(supportedURL_EN)}>
-      <Text style={styles.language_txt}>ENGLISH</Text>
+      <Text style={styles.language_txt}>ENGLISH
+      </Text>
       </TouchableOpacity>
       </View>
       <View style={styles.language_view_cmpt}>
