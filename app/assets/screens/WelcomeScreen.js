@@ -16,10 +16,7 @@ function WelcomeScreen() {
   const supportedURL_TG = "https://hulutera.com?lan=tg";
   const supportedURL_SO = "https://hulutera.com?lan=so";
   return (
-    <ImageBackground
-      style={styles.background}
-      source={require("../background.jpg")}
-    >
+    <ImageBackground style={styles.background}>
       <View style={styles.logo_container}>
         <Image style={styles.logo} source={require("../ht-logo-v2.png")} />
       </View>
@@ -65,6 +62,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-end",
     alignItems: "center",
+    color: "#c7c7c7",
   },
   logo_container: {
     position: "absolute",
