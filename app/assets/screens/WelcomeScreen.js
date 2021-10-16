@@ -7,45 +7,47 @@ import {
   View,
   TouchableOpacity,
   Linking,
+  SafeAreaView
 } from "react-native";
 
 function WelcomeScreen() {
-  const supportedURL_EN = "https://hulutera.com";
-  const supportedURL_AM = "https://hulutera.com?lan=am";
-  const supportedURL_AO = "https://hulutera.com?lan=ao";
-  const supportedURL_TG = "https://hulutera.com?lan=tg";
-  const supportedURL_SO = "https://hulutera.com?lan=so";
+  const ht_url_en = "https://hulutera.com";
+  const ht_url_am = "https://hulutera.com?lan=am";
+  const ht_url_ao = "https://hulutera.com?lan=ao";
+  const ht_url_tg = "https://hulutera.com?lan=tg";
+  const ht_url_so = "https://hulutera.com?lan=so";
   return (
+   
     <ImageBackground style={styles.background}>
-      <View style={styles.logo_container}>
-        <Image style={styles.logo} source={require("../ht-logo-v2.png")} />
-      </View>
+      <SafeAreaView style={styles.logo_container}>
+        <Image  source={require("../ht_logo_white.png")} />
+      </SafeAreaView>
 
       <View style={styles.title_container}>
-        <Text style={styles.title_text}>Choose your language</Text>
+        <Text style={styles.title_text}>Choose Language</Text>
       </View>
       <View style={styles.lang_button}>
-        <TouchableOpacity onPress={() => Linking.openURL(supportedURL_EN)}>
+        <TouchableOpacity onPress={() => Linking.openURL(ht_url_en)}>
           <Text style={styles.lan_text}>English</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.lang_button}>
-        <TouchableOpacity onPress={() => Linking.openURL(supportedURL_AM)}>
+        <TouchableOpacity onPress={() => Linking.openURL(ht_url_am)}>
           <Text style={styles.lan_text}>አማርኛ</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.lang_button}>
-        <TouchableOpacity onPress={() => Linking.openURL(supportedURL_AO)}>
+        <TouchableOpacity onPress={() => Linking.openURL(ht_url_ao)}>
           <Text style={styles.lan_text}>Afaan Oromoo</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.lang_button}>
-        <TouchableOpacity onPress={() => Linking.openURL(supportedURL_TG)}>
+        <TouchableOpacity onPress={() => Linking.openURL(ht_url_tg)}>
           <Text style={styles.lan_text}>ትግርኛ</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.lang_button}>
-        <TouchableOpacity onPress={() => Linking.openURL(supportedURL_SO)}>
+        <TouchableOpacity onPress={() => Linking.openURL(ht_url_so)}>
           <Text style={styles.lan_text}>Somali</Text>
         </TouchableOpacity>
       </View>
@@ -54,6 +56,7 @@ function WelcomeScreen() {
         <Text style={styles.bottom_text_cr}>Copyright ©2021</Text>
       </View>
     </ImageBackground>
+    
   );
 }
 
@@ -68,7 +71,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 70,
     alignItems: "center",
-    width: "100%",
+    width: "100%"
   },
   title_container: {
     width: "100%",
@@ -85,7 +88,7 @@ const styles = StyleSheet.create({
   lang_button: {
     width: "60%",
     height: 50,
-    backgroundColor: "#55468c",
+    backgroundColor: "#337ab7",
     marginBottom: 10,
     borderRadius: 5,
     shadowColor: "#000",
