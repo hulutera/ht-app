@@ -7,7 +7,7 @@ import {
   View,
   TouchableOpacity,
   Linking,
-  SafeAreaView,
+  SafeAreaView
 } from "react-native";
 
 function WelcomeScreen() {
@@ -57,7 +57,7 @@ function WelcomeScreen() {
         </View>
       </View>
       <View style={styles.footer_container}>
-        <Text style={styles.footer_text}>Powered by www.hulutera.com</Text>
+        <Text style={styles.footer_text}>Powered by Hulutera.com</Text>
         <Text style={styles.footer_text_cr}>Copyright ©2021</Text>
       </View>
     </ImageBackground>
