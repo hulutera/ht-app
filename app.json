@@ -2,7 +2,7 @@
   "expo": {
     "name": "Hulutera",
     "slug": "Hulutera",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
     "splash": {
@@ -21,6 +21,7 @@
     },
     "android": {
       "package": "appPackage.hulutera",
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
